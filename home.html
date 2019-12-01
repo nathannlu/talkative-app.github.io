@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+
+  <script src="https://kit.fontawesome.com/2a1be26c2a.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="flex flex-wrap my-4 mx-4 relative">
+    <img src="./assets/avatar.png" alt="">
+    <h2 class="heading-secondary inline-block pl-4 py-3">
+      Hi, Nathan
+    </h2>
+    <i class="absolute fas fa-cog" style="right: 0; font-size: 45px"></i>
+  </header>
+
+  <div class="flex flex-wrap text-center py-16">
+    <div class="w-1/2">
+      <div class="text-center inline-block">
+        <div class="blue-circle flex justify-content align-items-center">
+          <img src="./assets/icon-recording.png" alt="">
+        </div>    
+        <h3 class="pt-2">Recordings</h3>
+      </div>  
+    </div>
+
+
+    <div class="w-1/2">
+      <div class="text-center inline-block">
+        <div class="blue-circle flex justify-content align-items-center">
+          <img src="./assets/icon-recording.png" alt="">
+        </div>    
+        <h3 class="pt-2">Progress</h3>
+      </div>  
+    </div>    
+  </div>
+
+  <div class="flex flex-wrap text-center pb-16">
+    <div class="w-1/2">
+      <div class="text-center inline-block">
+        <div class="blue-circle flex justify-content align-items-center">
+          <img src="./assets/icon-recording.png" alt="">
+        </div>    
+        <h3 class="pt-2">Word Bank</h3>
+      </div>  
+    </div>
+
+
+    <div class="w-1/2">
+      <div id="speakBtn" class="text-center inline-block">
+        <div class="blue-circle flex justify-content align-items-center">
+          <img src="./assets/icon-recording.png" alt="">
+        </div>    
+        <h3 class="pt-2">Speak</h3>
+      </div>  
+    </div>    
+  </div>
+
+  <script>
+    // Speak button to record page
+    document.getElementById('speakBtn').addEventListener('click', ()=> {
+      window.location.href = "./speak.html"
+    })
+  </script>
+</body>
+</html>

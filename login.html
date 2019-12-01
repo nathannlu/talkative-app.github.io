@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+
+  <script src="https://kit.fontawesome.com/2a1be26c2a.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <div class="flex flex-wrap text-center justify-center content-center py-16">
+    <div class="icon w-full pb-8">
+      <img class="mx-auto" src="./assets/logo.png" alt="">
+      <h1 class="heading-primary pt-4">Talkative</h1>
+    </div>
+
+    <div class="login-form w-full">
+      <div class="pb-4">
+        <label for="username">Username</label>
+        <div class="relative">
+          <i class="absolute pl-2 pt-2 fas fa-user-circle"></i>
+          <input type="text" id="username" class="username py-1 pl-6">             
+        </div>
+      </div>
+
+      <div class="pb-8">
+        <label for="password">Password</label>
+        <div class="relative">
+          <i class="absolute pl-2 pt-2 fas fa-lock"></i>
+          <input type="password" id="password" class="password py-1 pl-6">              
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full pb-4">
+      <button id="loginBtn">Login</button>
+    </div>
+    <div class="w-full ">
+      <button>Sign up</button>
+    </div>
+
+  </div>
+
+  <script>
+    // Login button to home page
+    document.getElementById('loginBtn').addEventListener('click', ()=> {
+      window.location.href = "./home.html"
+    })
+  </script>
+</body>
+</html>
